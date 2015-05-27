@@ -6,4 +6,21 @@ var Router = Ember.Router.extend({
 });
 
 export default Router.map(function() {
+  this.route('about');
+  this.resource('weekdays', function() {
+    this.route('show', {path: '/:weekday_id'});
+
+
+
+  });
 });
+
+
+/*
+
+this.route('show', {path: '/:city_id'}, function(){
+      this.resource('markets', function(){});
+    });
+
+
+*/
