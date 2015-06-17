@@ -11,10 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150527171632) do
+ActiveRecord::Schema.define(version: 20150527195526) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "markets", force: :cascade do |t|
+    t.string  "title"
+    t.integer "weekday_id"
+  end
+
+  add_index "markets", ["weekday_id"], name: "index_markets_on_weekday_id", using: :btree
 
   create_table "weekdays", force: :cascade do |t|
     t.string "name"

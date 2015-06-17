@@ -5,10 +5,17 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Weekday.create(name: 'Sunday');
+
+Market.create(title: 'Gospel Flat Farmstand');
+Market.create(title: 'Star Route Farms Farm Stand');
+Market.create(title: 'whatupyo');
+
 Weekday.create(name: 'Monday');
-Weekday.create(name: 'Tuesday');
+Weekday.create(name: 'Tuesday', market_ids: [3]);
 Weekday.create(name: 'Wednesday');
 Weekday.create(name: 'Thursday');
 Weekday.create(name: 'Friday');
 Weekday.create(name: 'Saturday');
+Weekday.create(name: 'Sunday', market_ids: [1,2]);
+Weekday.create(name: 'all');
+
