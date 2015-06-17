@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class WeekdayTest < ActiveSupport::TestCase
+class MarketTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

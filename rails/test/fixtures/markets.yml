@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: 
+  street_address: 
+  city: 
+  latitude: 
+  longitude: 
+  weekday: 
+  time_opens: 2015-06-17 12:21:26
+  time_closes: 2015-06-17 12:21:26
+  date_opens: 
+  date_closes: 
+  governing_body: 
+  county: 
+  food_stamps: 
+  notes: MyText
+
+two:
+  title: 
+  street_address: 
+  city: 
+  latitude: 
+  longitude: 
+  weekday: 
+  time_opens: 2015-06-17 12:21:26
+  time_closes: 2015-06-17 12:21:26
+  date_opens: 
+  date_closes: 
+  governing_body: 
+  county: 
+  food_stamps: 
+  notes: MyText
