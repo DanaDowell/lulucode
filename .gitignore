@@ -15,4 +15,8 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
-*/.gitignore
+outline.txt
+*.sublime-project
+*.sublime-workspace
+*.txt
+rails/tmp/csv/*

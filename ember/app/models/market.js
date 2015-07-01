@@ -1,0 +1,8 @@
+import DS from 'ember-data';
+
+export default DS.Model.extend({
+  title: DS.attr('string'),
+  street_address: DS.attr('string'),
+  time_opens: DS.attr('string'),
+  weekday: DS.attr('string')
+});

@@ -18,11 +18,11 @@ test('Should welcome me to farmers markets', function(assert) {
     assert.equal(find('h2#title').text(), 'Welcome to farmMkts');
   });
 });
-
+/*
 test('Should allow navigating back to root from another page', function(assert) {
   visit('/about').then(function() {
     click('a:contains("Home")').then(function() {
       assert.notEqual(find('h3').text(), 'About');
     });
   });
-});
+});*/
