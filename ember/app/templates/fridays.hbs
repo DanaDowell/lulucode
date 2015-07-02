@@ -1,0 +1,13 @@
+<h3>fridays</h3>
+{{#each friday in this}}
+<div>
+<address>
+  <strong>{{friday.title}}</strong><br>
+  {{friday.street_address}}<br>
+  {{friday.city}}
+</address>
+
+  opens: {{friday.time_opens}}, closes: {{friday.time_closes}}<br>
+  food stamps accepted: {{friday.food_stamps}}
+  </div>
+{{/each}}

@@ -1,7 +1,19 @@
 Rails.application.routes.draw do
+
+  resources :sundays
+
+  resources :saturdays
+
   resources :markets
+
   resources :tuesdays
+
   resources :wednesdays
+
+  resources :thursdays
+  
+  resources :fridays
+  
 end
   #resources :weekdays
 

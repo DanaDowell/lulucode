@@ -1,3 +1,8 @@
 {{#each tuesday in this}}
-  {{tuesday.id}}
+<div>
+  {{tuesday.title}}, {{tuesday.street_address}}, {{tuesday.city}}<br>
+  open: {{tuesday.time_opens}}, closes: {{tuesday.time_closes}}<br>
+  food stamps accepted: {{tuesday.food_stamps}}
+  </div>
 {{/each}}
+

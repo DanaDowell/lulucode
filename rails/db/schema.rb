@@ -11,26 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150701014937) do
+ActiveRecord::Schema.define(version: 20150701214318) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "markets", force: :cascade do |t|
-    t.text  "title"
-    t.text  "street_address"
-    t.text  "city"
-    t.float "latitude"
-    t.float "longitude"
-    t.text  "weekday"
-    t.time  "time_opens"
-    t.time  "time_closes"
-    t.text  "date_opens"
-    t.text  "date_closes"
-    t.text  "governing_body"
-    t.text  "county"
-    t.text  "food_stamps"
-    t.text  "notes"
+    t.text   "title"
+    t.text   "street_address"
+    t.text   "city"
+    t.string "latitude",       limit: 12
+    t.string "longitude",      limit: 12
+    t.text   "weekday"
+    t.string "time_opens",     limit: 12
+    t.string "time_closes",    limit: 12
+    t.text   "date_opens"
+    t.text   "date_closes"
+    t.text   "governing_body"
+    t.text   "county"
+    t.text   "food_stamps"
+    t.text   "notes"
   end
 
 end

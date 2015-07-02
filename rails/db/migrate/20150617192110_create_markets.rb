@@ -4,11 +4,11 @@ class CreateMarkets < ActiveRecord::Migration
       t.text :title
       t.text :street_address
       t.text :city
-      t.float :latitude
-      t.float :longitude
+      t.string :latitude
+      t.string :longitude
       t.text :weekday
-      t.time :time_opens
-      t.time :time_closes
+      t.string :time_opens
+      t.string :time_closes
       t.text :date_opens
       t.text :date_closes
       t.text :governing_body

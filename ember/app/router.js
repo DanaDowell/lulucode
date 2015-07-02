@@ -19,5 +19,9 @@ export default Ember.Router.extend().map(function(){
   });
   this.route('tuesdays');
   this.route('wednesdays');
+  this.route('thursdays');
+  this.route('fridays');
+  this.route('saturdays');
+  this.route('sundays');
 });
 
