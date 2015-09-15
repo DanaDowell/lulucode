@@ -1,8 +1,15 @@
 
 {{#each market in this}}
- {{market.id}} &nbsp; &nbsp;
-{{#link-to 'markets.market' market}}{{market.title}}{{/link-to}}<br>
-{{market.street_address}}<br>
-{{market.time_opens}}<br>
-{{market.weekday}}<br><br>
+  {{market.id}} &nbsp; &nbsp;
+  {{#link-to 'markets.market' market}}{{market.title}}{{/link-to}}
+  <p>
+  {{market.street_address}}<br>
+  {{market.city}}
+  </p>
+  <p class="mkt-details">
+  {{market.time_opens}} &#8212; {{market.time_closes}}<br>
+  {{market.weekday}}<br>
+  </p>
 {{/each}}
+
+

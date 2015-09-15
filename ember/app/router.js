@@ -7,8 +7,8 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
  // this.route('about');
-  this.route('markets');
-  this.route('tuesdays');
+ // this.route('markets');
+  //this.route('tuesdays');
 });
 
 export default Ember.Router.extend().map(function(){
@@ -23,5 +23,14 @@ export default Ember.Router.extend().map(function(){
   this.route('fridays');
   this.route('saturdays');
   this.route('sundays');
+
+  this.route('counties', function() {
+    this.route('county', function() {
+      this.route('city', function() {
+      path: ':countyname'
+    });
+    });
+    
+  });
 });
 

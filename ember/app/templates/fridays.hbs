@@ -7,7 +7,7 @@
   {{friday.city}}
 </address>
 
-  opens: {{friday.time_opens}}, closes: {{friday.time_closes}}<br>
+  opens: {{formatted-time friday.time_opens 'h hh a'}}, closes: {{friday.time_closes}}<br>
   food stamps accepted: {{friday.food_stamps}}
   </div>
 {{/each}}
