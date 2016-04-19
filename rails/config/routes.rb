@@ -1,12 +1,16 @@
 Rails.application.routes.draw do
 
+  #get 'angular_test', to: 'angular_test#index'
+  #get 'sundays', to: 'sundays#index'
+  #get 'markets', to: 'markets#index'
+
   root 'home#index'
 
-  resources :sundays
+  resources :sundays, only: [ :index ]
 
   resources :saturdays
 
-  resources :markets
+  resources :markets, only: [ :index ]
 
   resources :tuesdays
 

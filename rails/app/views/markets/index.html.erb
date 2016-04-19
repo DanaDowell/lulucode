@@ -1,0 +1,28 @@
+<h2>all farmers markets</h2>
+
+<% @markets.each do |market| %>
+<div>
+  <%= market.title %><br>
+  <address>
+  <%= market.street_address %>, <%= market.city %><br>
+  <%= market.county %> County
+  </address>
+  <time>
+  <%= market.weekday %>s<br>
+  <%= market.time_opens %> to <%= market.time_closes %>
+  <div data="dates_open">
+  <h5>dates open</h5> 
+  approximately <%= market.date_opens %> to <%= market.date_closes %>
+  </div>
+  </time>
+  
+  <div>
+    <span data="food_stamps">food stamps accepted: <%= market.food_stamps %></span><br>
+    <span data="governing_body"><% market.governing_body %></span>
+    <notes data="addl_notes">
+    <%= market.notes %>
+    </notes>
+  </div>
+</div>
+<br>
+<% end %>
